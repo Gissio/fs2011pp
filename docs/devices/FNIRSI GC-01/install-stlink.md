@@ -37,19 +37,39 @@ The board should look like in the photo above. If it does not, you may have a di
 
 ## Step 2: Connect the programmer
 
+There are different versions of the boards. The following pictures show two of them.
+If there are no labels on the programming pads, the pins are, from left to right:
+
+`+3.3V`  
+`SWDIO`  
+`SWCLK`  
+`GND`  
+
 ![Bosean FS-600 connectors](img/gc-01-swd.jpg)
+
+On other board versions there are labels for each pad. In this case, the labels are:
+
+`1. SWCLK`  
+`2. SWDIO`  
+`3. GND`  
+`4. +3.3V`  
+
+![Bosean FS-600 connectors](img/gc-01-swd_2.png)
 
 Now, follow these steps:
 
 * Optional: Solder the 4-pin header to the JP1 pads of the board.
 * If you use Windows, install the [ST-LINK driver](https://www.st.com/en/development-tools/stsw-link009.html).
-* Connect the ST-LINK V2 device to the four pads next to the button cells. If the pads are labeled, follow their labels. If they are unlabeled, the pins are, from left to right:
-  * +3.3V
-  * SWDIO
-  * SWCLK
-  * GND
+* Connect the ST-LINK V2 device to the four pads next to the button cells.
 
-Make sure the electrical connections are correct. You may break your device if the connections are not correct.
+The following example shows how to connect the ST-LINK V2 device to the board.
+
+`Pin 7   -  SWDIO`  
+`Pin 9   -  SWCLK`  
+`Pin 19  -  +3.3V`  
+`Pin 20  -  GND`  
+
+![Bosean FS-600 connectors](img/gc-01-stlink.png)
 
 ## Step 3: Flash the firmware
 
